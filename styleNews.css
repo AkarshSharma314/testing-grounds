@@ -100,3 +100,6 @@ nav a:hover{
  .socials svg{
     fill: #fab940;
  }
+ .socials a svg:hover{
+    fill: #ff8a5b;
+ }
