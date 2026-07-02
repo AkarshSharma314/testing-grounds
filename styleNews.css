@@ -1,6 +1,5 @@
 body{
     background-color: #fffcf1;
-    margin-top: 5px;
 
 }
 header{
@@ -11,21 +10,23 @@ header{
     padding-bottom: 15px;
     padding-top: 15px;
     padding-left: 5px ;
-    border-radius: 25px;
+    padding-right: 5px;
     display: flex;
+    margin: 0 0;
 
 }
 nav{
-    background-color: rgb(24, 22, 21);
+    background-color: #d44d5c;
     /* border: 3px 3px;
     border-style: dashed;
     border-color: rgb(158, 122, 75); */
     padding-bottom: 5px;
     padding-top: 5px;
     padding-left: 5px ;
-    border-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     display: flex;
-    margin: auto;
+    align-self: flex-end;
 
 }
 .Banner{
@@ -44,8 +45,8 @@ nav img{
 nav ul li{
     list-style: none;
     font-weight: 100;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 4%;
+    margin-left: 4%;
     font-size: large;
     white-space: nowrap;
     padding: 24px 12px;
@@ -55,12 +56,12 @@ nav ul li{
 }
 nav ul  li:hover{
     border-radius: 20px;
-    background: linear-gradient(145deg, #161413, #1a1816);
-    box-shadow:  27px 27px 46px #0b0a09,   
-                 -27px -27px 46px #252221;
+    background: linear-gradient(145deg, #bf4553, #e35262);
+    box-shadow:  19px 19px 38px #9b3843,
+                -19px -19px 38px #ff6275;
 }
 nav ul li a{
-    color: #D0C2AC;
+    color: rgb(69, 12, 63);
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -75,8 +76,27 @@ header h3{
     top: 4px;
 }
 nav a:hover{
-    color: #997953;
+    color: #160029;
 }
 /* nav a:visited{
     color: #714e3a;
 } */
+ ul{
+    list-style: none;
+ }
+ .socials{
+    display: flex;
+    align-self: flex-end;
+    margin: auto;
+    flex-wrap: wrap;
+ }
+ .socials ul li{
+    margin-right: 4%;
+ }
+.socials ul{
+    display: flex;
+    gap: 28%;
+}
+ .socials svg{
+    fill: #fab940;
+ }
