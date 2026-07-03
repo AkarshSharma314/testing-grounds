@@ -1,5 +1,5 @@
 body{
-    background-color: #fffcf1;
+    background-color: #f1e6d5;
 
 }
 header{
@@ -16,7 +16,7 @@ header{
 
 }
 nav{
-    background-color: #d44d5c;
+    background-color: #74070e;
     /* border: 3px 3px;
     border-style: dashed;
     border-color: rgb(158, 122, 75); */
@@ -56,12 +56,12 @@ nav ul li{
 }
 nav ul  li:hover{
     border-radius: 20px;
-    background: linear-gradient(145deg, #bf4553, #e35262);
-    box-shadow:  19px 19px 38px #9b3843,
-                -19px -19px 38px #ff6275;
+    background: linear-gradient(145deg, #68060d, #7c070f);
+    box-shadow:  8px 8px 6px #57050b,
+                -8px -8px 6px #910912;
 }
 nav ul li a{
-    color: rgb(69, 12, 63);
+    color: #F4E3B2;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -76,7 +76,7 @@ header h3{
     top: 4px;
 }
 nav a:hover{
-    color: #160029;
+    color: #c28d39;
 }
 /* nav a:visited{
     color: #714e3a;
@@ -99,7 +99,88 @@ nav a:hover{
 }
  .socials svg{
     fill: #fab940;
- }
- .socials a svg:hover{
-    fill: #ff8a5b;
- }
+}
+.socials a svg:hover{
+fill: #9f4409;
+}
+.mapCont{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.mapCont img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#columns{
+    /* display: flex;
+    flex-wrap: wrap */
+    column-count: 2;
+    column-width: 360px;
+    column-gap: 6%;
+
+}
+#columns img{
+    width: 15em;
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 6%;
+}
+#columns section{
+    display: flex;
+}
+#columns p{
+    color: #161415;
+    font-family: "Merriweather", serif;
+    font-size: small;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+    word-spacing: 0.4em;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+}
+#Title h1{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+#Title{
+    text-align: center;
+    padding: 10px 2px;
+    border: #101010;
+    border-bottom-width: 10px;
+    border-bottom-style: double;
+    border-top-width: 10px;
+    border-top-style: double;
+    margin-top: 10px;
+}
+#quote{
+    margin: 15px 10px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: #4b2e2b;
+    padding: 7px;
+    border-radius: 25px;
+    font-size: large;
+    line-height: 1.6;
+    letter-spacing: 0.08em;
+    word-spacing: 0.4em;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+#columns h2{
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+main{
+    padding: 15px;
+    padding-bottom: 25px;
+    border: #101010;
+    border-bottom-width: 10px;
+    border-bottom-style: double;
+}
+ 
