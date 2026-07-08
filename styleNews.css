@@ -13,30 +13,72 @@ header{
     padding-right: 5px;
     display: flex;
     margin: 0 0;
+    width: 100%;
+    box-sizing: border-box;
 
 }
+header h1{
+    color: #e3a419;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5%;
+}
+header h3{
+    color: #f0e7d5;
+    position: relative;
+    top: 4px;
+}
+#svg1{
+    padding: 0 5px ;
+}
+.socials{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+ .socials ul li{
+    margin-right: 4%;
+ }
+.socials ul{
+    display: flex;
+    gap: 28%;
+    justify-self: center;
+    box-sizing: border-box;
+    padding-left: 4px;
+}
+ .socials svg{
+    fill: #fab940;
+}
+.socials a svg:hover{
+fill: #9f4409;
+}
+
+/* ---------------------------------------------------------------- */
+
 nav{
     background-color: #74070e;
     /* border: 3px 3px;
     border-style: dashed;
     border-color: rgb(158, 122, 75); */
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 5px ;
+    padding: 5px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     display: flex;
     align-self: flex-end;
+    width: 100%;
+    box-sizing: border-box;
 
 }
 .Banner{
     align-self: flex-start;
 }
-nav ul{
+nav ul.navi{
     display: flex;
     flex-wrap: nowrap;
-    align-items: flex-end;
-    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5px;
     
 }
 nav img{
@@ -65,44 +107,29 @@ nav ul li a{
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-header h1{
-    color: #e3a419;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 5%;
-}
-header h3{
-    color: #f0e7d5;
-    position: relative;
-    top: 4px;
-}
+
 nav a:hover{
     color: #c28d39;
 }
-/* nav a:visited{
+nav a:visited{
     color: #714e3a;
-} */
+}
  ul{
     list-style: none;
  }
- .socials{
-    display: flex;
-    align-self: flex-end;
-    margin: auto;
-    flex-wrap: wrap;
+ nav svg{
+    fill: #F4E3B2;
  }
- .socials ul li{
-    margin-right: 4%;
+ nav svg:hover{
+    fill: #c28d39;
  }
-.socials ul{
-    display: flex;
-    gap: 28%;
+nav ul.navi li:first-child{
+    margin-right: auto;
 }
- .socials svg{
-    fill: #fab940;
-}
-.socials a svg:hover{
-fill: #9f4409;
-}
+ 
+/* -------------------------------------------------------------------- */
+
+
 .mapCont{
     max-width: 800px;
     width: 100%;
@@ -114,6 +141,11 @@ fill: #9f4409;
     height: auto;
     display: block;
 }
+
+
+
+
+
 #columns{
     /* display: flex;
     flex-wrap: wrap */
@@ -126,7 +158,7 @@ fill: #9f4409;
     width: 15em;
     float: left;
     margin-right: 4%;
-    margin-bottom: 6%;
+    margin-bottom: 5%;
 }
 #columns section{
     display: flex;
@@ -168,13 +200,14 @@ fill: #9f4409;
     line-height: 1.6;
     letter-spacing: 0.08em;
     word-spacing: 0.4em;
-    font-weight: 500;
+    font-weight: 5  00;
     margin-bottom: 1.2rem;
 }
 #columns h2{
     font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    padding-top: 5px;
 }
 main{
     padding: 15px;
@@ -183,4 +216,28 @@ main{
     border-bottom-width: 10px;
     border-bottom-style: double;
 }
- 
+@media(max-width: 800px) {
+    #columns{
+        column-count: 1;
+        column-width: auto;
+        gap: 1.5rem;
+    }
+    #columns img{
+        float: none;
+        display: block;
+        margin: 15px auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+ /* ------------------------------------------------------------------------------ */
+
+ .mapContainer{
+    display: flex;
+    margin: 10px;
+ }
+.mapContainer svg{
+    margin: 0 auto;
+}
