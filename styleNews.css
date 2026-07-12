@@ -116,7 +116,7 @@ nav ul li{
     margin-left: 0.5vw;
     font-size: medium;
     white-space: nowrap;
-    padding: 0.1vw 2vw;
+    padding: 0.4vw 2vw;
     transition: all 0.4s ease;
     /* width: clamp(20px, 2vw, 32px); */
     height: clamp(20px, 3vw, 32px);
@@ -124,7 +124,7 @@ nav ul li{
     transition: fill 0.3s ease;
     display: flex;
     align-items: center;
-    
+    position: relative;
     
 }
 nav ul  li:hover{
@@ -136,26 +136,48 @@ nav ul  li:hover{
 nav ul li a{
     color: #F4E3B2;
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
 }
 
 nav a:hover{
     color: #c28d39;
 }
-nav a:visited{
-    color: #714e3a;
+ul{
+list-style: none;
 }
- ul{
-    list-style: none;
- }
- nav svg{
-    fill: #F4E3B2;
- }
- nav svg:hover{
-    fill: #c28d39;
- }
+nav svg{
+fill: #F4E3B2;
+}
+nav svg:hover{
+fill: #c28d39;
+}
 nav ul.navi li:first-child{
     margin-right: auto;
+}
+nav li .tooltip{
+    position: absolute;
+    background-color: #1816152c;
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 0.5rem;
+    color: #181615;
+    width: 6rem;
+    top: 150%;
+    left: 0;
+    transition: 200ms cubic-bezier(0.85,-0.25, 0.84, 2.09);
+    transition-delay: 150ms;
+    opacity: 0;
+    white-space: wrap;
+    display: hidden;
+    transform: translateY(-50px) rotate(-25deg);
+
+}
+nav li:hover .tooltip,
+nav li:focus .tooltip{
+    opacity: 1;
+    display: block;
+    transform: translate(0) rotate(0);
 }
  
 /* -------------------------------------------------------------------- */
@@ -267,12 +289,50 @@ main{
 
  .mapContainer{
     display: flex;
-    margin: 10px;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    width: 100%;
+    box-sizing: border-box;
  }
 .mapContainer svg{
+    width: clamp(280px, 85vw, 600px);
+    height: auto;
+    
+    display: block;
     margin: 0 auto;
-    min-width: 400px;
-    position: fixed;
-    top: 350px;
+    float: left;
+    padding-right: 1rem;
 
 }
+
+/* map container tooltips settings----------------------------------------------------------------- */
+
+.master-holder{
+    position:absolute;
+    background-color: #1816151b;
+    backdrop-filter: blur(5px);
+    color: #181615;
+    border-radius: 15px;
+    font-weight: 5rem;
+    padding: 0.3rem 0.8rem;
+    box-shadow: 0 5px 10px #181615;
+    opacity: 0;
+    display: none;
+    white-space: wrap;
+}
+.content-box{
+    display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+.content-box.active, .master-holder{
+    display: block;
+}
+
+
