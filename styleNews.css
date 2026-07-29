@@ -393,3 +393,42 @@ body.classic-mode .classic-feed {
 /* Button Icons in Classic Mode: Hide 'read' icon, show 'map' icon */
 body.classic-mode #read { display: inline-block; }
 body.classic-mode #map { display: none; }
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+#mainStory{
+    display: grid;
+    background-color: #181615;
+    grid-template-columns: 1fr 1fr;
+    border-top-right-radius: 50px;
+
+}
+#mainStory div img{
+    width: 50vw;
+    height: 400px;
+    padding: 5px 5px;
+}
+p#date{
+    font-size: 1cm;
+    color: #F4E3B2;
+    padding-top: 0.5cm;
+}
+p#author{
+    font-size: large;
+    color: #F4E3B2;
+}
+p#mainContent{
+    color: #F4E3B2;
+    padding-left: 10px;
+}
+div#mainHeading{
+    display: block;
+    background-color: #F4E3B2;
+    font-size: 2.5rem;
+    padding: 10px 10px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+}
+div#mainData{
+    padding-left: 10px;
+}

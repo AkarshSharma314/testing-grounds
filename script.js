@@ -27,3 +27,30 @@ regions.forEach(region => {
         document.querySelectorAll('.content-box').forEach(box => box.classList.remove('active'));
     });
 });
+
+
+
+//-------------------------------------------------------------
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.querySelector('.readmode');
+
+  // Load saved preference from localStorage
+  if (localStorage.getItem('spotlight_layout') === 'classic') {
+    document.body.classList.add('classic-mode');
+  }
+
+  // Toggle on click
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('classic-mode');
+
+    // Save choice so browser remembers it next time
+    if (document.body.classList.contains('classic-mode')) {
+      localStorage.setItem('spotlight_layout', 'classic');
+    } else {
+      localStorage.setItem('spotlight_layout', 'map');
+    }
+  });
+});
